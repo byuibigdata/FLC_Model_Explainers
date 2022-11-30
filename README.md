@@ -21,7 +21,11 @@ Depending on the project that you are working on, different model explainers wil
 ELI5 (Explain like I'm 5) is a model explainer that can 
 
 
-
+LIME
+SHAP
+Yellowbrick
+Alibi
+Lucid
 
 
 ## What does the information mean that the model explainer gives us? - Ammon 
