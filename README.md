@@ -77,5 +77,5 @@ resources:
 - https://towardsdatascience.com/using-shap-values-to-explain-how-your-machine-learning-model-works-732b3f40e137
 - https://shap.readthedocs.io/en/latest/index.html
 - https://christophm.github.io/interpretable-ml-book/shapley.html
-- 
+
 
