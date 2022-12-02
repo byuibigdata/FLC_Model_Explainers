@@ -16,11 +16,27 @@ Is the model more complicated than it needs to be?
 
 
 
-## What does the information mean that the model explainer gives us? 
+## How does a model explainer work? -- Richard
 
-This information allows us to see inside the Blackbox of what a ML model is doing.
+Sometimes in machine learning, you'll hear the term 'black box' used to describe the obscurity of machine learning models. Often times when working on a model, it falls to the user to determine how a model came to the conclusions that it did. With model explainers, that is no longer a problem! And so, to prevent model explainers themselves becoming a 'black box' of obscurity, it's time to learn about how they work.
+I'll be mostly discussing how the SHAP model works, as it was the first model explainer to hit the scene and is currently among the most popular. Rest assured, other model explainers are either built on top of SHAP or simply work similarly to how SHAP functions.
+SHAP's documentation website self-describes as the following: "SHAP (SHapley Additive exPlanations) is a game theoretic approach to explain the output of any machine learning model. It connects optimal credit allocation with local explanations using the classic Shapley values from game theory and their related extensions."
+This description, while accurate, is full of technical jargon that is hard to parse. To understand it, we need to understand Shapley values.
+Shapley values, named after and introduced by Lloyd Shapley in 1951, are 'game theory' principles used to explain certain mathematical problems. For example, if we have a coalition 'C' that collaborates to produce a value V, how much did each individual member contribute to the final value?
+!["picture of coalition of values to final value](photos/nanpic1.png)
+The answer to this may appear simple, but it can become quite tricky when there are interacting effects between members, and when certain permutations can cause members to contribute more than the sum of their parts. So, we calculate the Shapley value of each individual member to determine a sort of relevant worth to the coalition. First, we can take sample a coalition that contains member 1, then looking at the coaltion formed by removing that member. 
+!["picture of coalition of values to final value](photos/nanpic2.png)
+!["picture of coalition of values to final value](photos/nanpic3.png)
+We can then compare the respective values of the two resulting coalitions, and compare between the two. The difference is the marginal contribution of member 1 to C(234). That's how member 1 contributed to _that specific group_.
+!["picture of coalition of values to final value](photos/nanpic4.png)
+Then, we're able to do this for every single permutation that contains member 1.
+!["picture of coalition of values to final value](photos/nanpic5.png)
+Taking the mean of the marginal contribution of member 1 to all of these grants as our Shapley value, signified with the lowercase phi, or $\varphi$.
 
+Mathematically, this is exaplained thusly:
+!["picture of coalition of values to final value](photos/nanpic6.png)
 
+Translating this concept to model explainability is pretty straightforward.
 
 
 
