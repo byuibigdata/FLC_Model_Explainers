@@ -29,13 +29,6 @@ This information allows us to see inside the Blackbox of what a ML model is doin
 https://www.analyticsvidhya.com/blog/2020/03/6-python-libraries-interpret-machine-learning-models/
 Depending on the project that you are working on, different model explainers will be able to tell you your results in different ways. There are 6 main model explainers, each with their own personality.
 
-
-### Global Features Importances
-Global Features Importances (Model Level): It lets us analyze model weights to understand the global performance of the model.
-
-### Local Features Importances 
-Local Features Importances (Individual Example Level): It lets us analyze individual data example's prediction to understand the local performance of the model. This can help us drill down why the particular prediction was made and which data features played what role in that prediction.
-
 LIME
 SHAP
 Yellowbrick
@@ -43,13 +36,37 @@ Alibi
 Lucid
 
 
-# Model Explainer Example Derek LIME
+### Global Features Importances
+Global Features Importances (Model Level): It lets us analyze model weights to understand the global performance of the model.
 
+### Local Features Importances 
+Local Features Importances (Individual Example Level): It lets us analyze individual data example's prediction to understand the local performance of the model. This can help us drill down why the particular prediction was made and which data features played what role in that prediction.
 
 
 # Model Explainer Example Tanner SHAP
 
 Shaply Additive Explanations or SHAP values uses game theory to define the importance of different features within a given model. 'The Shapley value is the average of all the marginal contributions to all possible coalitions.' So for example, a positive Shaply value of 1.24 would indicate a positive effect on the accuracy of the model, whereas a score of -1.24 would indicate the opposite. It's also important to note that Shaply values 'don't evaluate the quality of the model itself.' 
+
+##### Sources 
+
+- https://www.kaggle.com/code/dansbecker/advanced-uses-of-shap-values/tutorial
+
+- https://medium.com/analytics-vidhya/explain-ml-models-shap-library-5ce375c85d7d
+
+- https://www.kaggle.com/code/scratchpad/notebook616777f210/edit
+
+- https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.mllib.tree.GradientBoostedTrees.html
+
+- https://interpret.ml/docs/lime.html
+
+- https://github.com/TeamHG-Memex/eli5
+
+- https://towardsdatascience.com/using-shap-values-to-explain-how-your-machine-learning-model-works-732b3f40e137
+
+- https://shap.readthedocs.io/en/latest/index.html
+
+- https://christophm.github.io/interpretable-ml-book/shapley.html
+
 
 
 
@@ -128,24 +145,6 @@ exp.show_in_notebook(text=True)
 
 
 resources: 
-
-- https://www.kaggle.com/code/dansbecker/advanced-uses-of-shap-values/tutorial
-
-- https://medium.com/analytics-vidhya/explain-ml-models-shap-library-5ce375c85d7d
-
-- https://www.kaggle.com/code/scratchpad/notebook616777f210/edit
-
-- https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.mllib.tree.GradientBoostedTrees.html
-
-- https://interpret.ml/docs/lime.html
-
-- https://github.com/TeamHG-Memex/eli5
-
-- https://towardsdatascience.com/using-shap-values-to-explain-how-your-machine-learning-model-works-732b3f40e137
-
-- https://shap.readthedocs.io/en/latest/index.html
-
-- https://christophm.github.io/interpretable-ml-book/shapley.html
 
 https://www.kaggle.com/code/dansbecker/advanced-uses-of-shap-values/tutorial
 
