@@ -106,6 +106,8 @@ https://coderzcolumn.com/tutorials/machine-learning/how-to-use-eli5-to-understan
 
 ![ELI5 Notebook](Notebooks/ModelExplainers-ELI5.ipynb)
 
+https://www.analyticsvidhya.com/blog/2020/11/demystifying-model-interpretation-using-eli5/
+
 
 # Model Explainer Example Derek LIME
 The LIME (Local Interpretable Model-Agnostic) model explainer creates explanations for models which answer the question, "Why can I trust this model?" It does this by providing detailed breakdowns of each decision. Below is an example of using the LIME model explainer to analyze a sentiment analysis project on a group of newsgroup posts about religion.
