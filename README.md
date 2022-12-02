@@ -47,7 +47,6 @@ Local Features Importances (Individual Example Level): It lets us analyze indivi
 
 Shaply Additive Explanations or SHAP values uses game theory to define the importance of different features within a given model. 'The Shapley value is the average of all the marginal contributions to all possible coalitions.' So for example, a positive Shaply value of 1.24 would indicate a positive effect on the accuracy of the model, whereas a score of -1.24 would indicate the opposite. It's also important to note that Shaply values 'don't evaluate the quality of the model itself.' 
 
-
 ##### Sources 
 
 - https://www.kaggle.com/code/dansbecker/advanced-uses-of-shap-values/tutorial
