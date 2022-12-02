@@ -41,8 +41,12 @@ Depending on the project that you are working on, different model explainers wil
 
 
 
-# Model Explainer Example Tanner 
+# Model Explainer Example Tanner SHAP
 
+Shaply Additive Explanations or SHAP values uses game theory 
+
+
+##### Sources 
 
 
 
@@ -70,4 +74,6 @@ https://www.kaggle.com/code/scratchpad/notebook616777f210/edit
 https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.mllib.tree.GradientBoostedTrees.html
 https://interpret.ml/docs/lime.html
 https://github.com/TeamHG-Memex/eli5
+https://towardsdatascience.com/using-shap-values-to-explain-how-your-machine-learning-model-works-732b3f40e137
+https://shap.readthedocs.io/en/latest/index.html
 
