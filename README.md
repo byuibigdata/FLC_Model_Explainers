@@ -30,10 +30,11 @@ https://www.analyticsvidhya.com/blog/2020/03/6-python-libraries-interpret-machin
 Depending on the project that you are working on, different model explainers will be able to tell you your results in different ways. There are 6 main model explainers, each with their own personality.
 
 
-# Global Features Importances
+### Global Features Importances
+Global Features Importances (Model Level): It lets us analyze model weights to understand the global performance of the model.
 
-# Local Features Importances 
-
+### Local Features Importances 
+Local Features Importances (Individual Example Level): It lets us analyze individual data example's prediction to understand the local performance of the model. This can help us drill down why the particular prediction was made and which data features played what role in that prediction.
 
 
 # Model Explainer Example Derek LIME
@@ -47,6 +48,7 @@ Depending on the project that you are working on, different model explainers wil
 
 
 # Model explainer Example Eli 5
+https://coderzcolumn.com/tutorials/machine-learning/how-to-use-eli5-to-understand-sklearn-models-their-performance-and-their-predictions
 ### EXPLAIN LIKE IM 5  (ELI 5)
 
 
