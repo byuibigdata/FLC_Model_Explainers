@@ -36,9 +36,23 @@ Taking the mean of the marginal contribution of member 1 to all of these grants 
 Mathematically, this is exaplained thusly:
 !["picture of coalition of values to final value](photos/nanpic6.png)
 
-Translating this concept to model explainability is pretty straightforward.
+Translating this concept to model explainability is pretty straightforward, as you can imagine. It was first done in 2017 by Scott M Lundburg and Su-In Lee in thier paper, "_A Unified Approach to Interpreting Model Predictions_". You can access their paper [here](https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html).
 
+This paper is where SHAP was introduced. SHAP changed how we view Shapley values from members of a coalition contributing to a vlue, to features contributing to a function or a model's output.
+We can get a clue of how they do so by taking a look at the acronym 'SHAP': Shapley Additive Explanations.
+We now know what Shapley values are, and we know what an explanation is (hopefully), but what does additive mean here?
+Lundburg and Lee define an addative feature attribution as follows.
 
+!["picture of coalition of values to final value](photos/nanpic7.png)
+Given features inputs x and model f(x), we can define a set of simplified local inputs as x'. This means that we take a feature vector into a discrete binary vector where features are either included or excluded. We can also define an explanatory model g(x'), which we will see it's importance in a moment.
+
+Lundburg and Lee then define two things that we need to ensure. One, if x is roughly equivalent to x', then f(x) is roughly equivalent to g(x').
+!["picture of coalition of values to final value](photos/nanpic8.png)
+And two, that g must take this form. Phi-0 here is the null output of the model, which is just the average output of the model, and phi-i is the explained effect of feature i. This is also known as it's attribution.
+!["picture of coalition of values to final value](photos/nanpic9.png)
+These two properties together bring us an explanatory model that has additive feature attribution.
+!["picture of coalition of values to final value](photos/nanpic10.png)
+The very nice thing about this is thatg it is very easy to see the importance of each feature. All we have to do is look at our phi values and we can determine the contribution of each feature in the model.
 
 ## Various Model Explainers 
 
