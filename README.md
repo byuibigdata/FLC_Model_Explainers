@@ -7,7 +7,7 @@ What is a model explainer?
 A model explainer is a function designed to show how the model produces different predictions.
 Models in 2D are relatively easy to describe. For example, there we could have a classification model determined by a single line.
 
-![](2DModel.png)
+![](photos/2DModel.png)
 
 However, models frequently have more than 2 features, and so cannot be easily placed on a single chart. However, a model explainer can help us answer the following questions.
 Which features are the most important?
@@ -138,8 +138,8 @@ print(exp.as_list()) # list top 6 words that made the decision
 fig = exp.as_pyplot_figure()
 exp.show_in_notebook(text=True)
 ```
-![figure](weights.png)
-![text](text_summary.png)
+![figure](photos/weights.png)
+![text](photos/text_summary.png)
 
 
 
