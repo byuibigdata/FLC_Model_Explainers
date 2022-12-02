@@ -74,12 +74,7 @@ Shaply Additive Explanations or SHAP values uses game theory to define the impor
 https://coderzcolumn.com/tutorials/machine-learning/how-to-use-eli5-to-understand-sklearn-models-their-performance-and-their-predictions
 ### EXPLAIN LIKE IM 5  (ELI 5)
 
-
-
-# Amazing dashboarding for model explainers
-
-https://titanicexplainer.herokuapp.com/classifier/
-
+![](Notebooks/ModelExplainers-ELI5.ipynb)
 
 
 # Model Explainer Example Derek LIME
@@ -142,6 +137,11 @@ exp.show_in_notebook(text=True)
 ![text](photos/text_summary.png)
 
 
+
+
+## Amazing dashboarding for model explainers
+
+https://titanicexplainer.herokuapp.com/classifier/
 
 
 resources: 
