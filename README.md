@@ -43,7 +43,7 @@ Depending on the project that you are working on, different model explainers wil
 
 # Model Explainer Example Tanner SHAP
 
-Shaply Additive Explanations or SHAP values uses game theory 
+Shaply Additive Explanations or SHAP values uses game theory to define the importance of different features within a given model. 'The Shapley value is the average of all the marginal contributions to all possible coalitions.' So for example, a positive Shaply value of 1.24 would indicate a positive effect on the accuracy of the model, whereas a score of -1.24 would indicate the opposite. It's also important to note that Shaply values 'don't evaluate the quality of the model itself.' 
 
 
 ##### Sources 
@@ -68,12 +68,14 @@ https://titanicexplainer.herokuapp.com/classifier/
 
 
 resources: 
-https://www.kaggle.com/code/dansbecker/advanced-uses-of-shap-values/tutorial
-https://medium.com/analytics-vidhya/explain-ml-models-shap-library-5ce375c85d7d
-https://www.kaggle.com/code/scratchpad/notebook616777f210/edit
-https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.mllib.tree.GradientBoostedTrees.html
-https://interpret.ml/docs/lime.html
-https://github.com/TeamHG-Memex/eli5
-https://towardsdatascience.com/using-shap-values-to-explain-how-your-machine-learning-model-works-732b3f40e137
-https://shap.readthedocs.io/en/latest/index.html
+- https://www.kaggle.com/code/dansbecker/advanced-uses-of-shap-values/tutorial
+- https://medium.com/analytics-vidhya/explain-ml-models-shap-library-5ce375c85d7d
+- https://www.kaggle.com/code/scratchpad/notebook616777f210/edit
+- https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.mllib.tree.GradientBoostedTrees.html
+- https://interpret.ml/docs/lime.html
+- https://github.com/TeamHG-Memex/eli5
+- https://towardsdatascience.com/using-shap-values-to-explain-how-your-machine-learning-model-works-732b3f40e137
+- https://shap.readthedocs.io/en/latest/index.html
+- https://christophm.github.io/interpretable-ml-book/shapley.html
+- 
 
