@@ -175,6 +175,8 @@ exp.show_in_notebook(text=True)
 
 https://titanicexplainer.herokuapp.com/classifier/
 
+main Github for this dashboarding
+https://github.com/oegedijk/explainerdashboard
 
 resources: 
 
